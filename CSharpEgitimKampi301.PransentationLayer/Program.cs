@@ -20,3 +20,7 @@ namespace CSharpEgitimKampi301.PransentationLayer
 		}
 	}
 }
+
+
+
+
