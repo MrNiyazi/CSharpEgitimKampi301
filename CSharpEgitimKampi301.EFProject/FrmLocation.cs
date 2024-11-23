@@ -84,5 +84,10 @@ namespace CSharpEgitimKampi301.EFProject
 			MessageBox.Show("Güncelleme işlemi başarılı");
 
 		}
+
+		private void txtCountry_TextChanged(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

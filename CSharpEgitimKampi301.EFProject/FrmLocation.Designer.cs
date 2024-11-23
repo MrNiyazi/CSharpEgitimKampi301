@@ -55,7 +55,7 @@
 			// btnGetById
 			// 
 			this.btnGetById.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.btnGetById.Location = new System.Drawing.Point(121, 480);
+			this.btnGetById.Location = new System.Drawing.Point(103, 480);
 			this.btnGetById.Name = "btnGetById";
 			this.btnGetById.Size = new System.Drawing.Size(171, 42);
 			this.btnGetById.TabIndex = 23;
@@ -65,7 +65,7 @@
 			// btnDelete
 			// 
 			this.btnDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.btnDelete.Location = new System.Drawing.Point(121, 436);
+			this.btnDelete.Location = new System.Drawing.Point(103, 434);
 			this.btnDelete.Name = "btnDelete";
 			this.btnDelete.Size = new System.Drawing.Size(171, 40);
 			this.btnDelete.TabIndex = 22;
@@ -76,7 +76,7 @@
 			// btnUpdate
 			// 
 			this.btnUpdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.btnUpdate.Location = new System.Drawing.Point(121, 389);
+			this.btnUpdate.Location = new System.Drawing.Point(103, 387);
 			this.btnUpdate.Name = "btnUpdate";
 			this.btnUpdate.Size = new System.Drawing.Size(171, 43);
 			this.btnUpdate.TabIndex = 21;
@@ -87,7 +87,7 @@
 			// btnAdd
 			// 
 			this.btnAdd.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.btnAdd.Location = new System.Drawing.Point(121, 341);
+			this.btnAdd.Location = new System.Drawing.Point(103, 341);
 			this.btnAdd.Name = "btnAdd";
 			this.btnAdd.Size = new System.Drawing.Size(171, 44);
 			this.btnAdd.TabIndex = 20;
@@ -97,10 +97,11 @@
 			// 
 			// txtCountry
 			// 
-			this.txtCountry.Location = new System.Drawing.Point(121, 95);
+			this.txtCountry.Location = new System.Drawing.Point(103, 92);
 			this.txtCountry.Name = "txtCountry";
 			this.txtCountry.Size = new System.Drawing.Size(171, 22);
 			this.txtCountry.TabIndex = 19;
+			this.txtCountry.TextChanged += new System.EventHandler(this.txtCountry_TextChanged);
 			// 
 			// label3
 			// 
@@ -113,7 +114,7 @@
 			// 
 			// txtCıty
 			// 
-			this.txtCıty.Location = new System.Drawing.Point(121, 49);
+			this.txtCıty.Location = new System.Drawing.Point(103, 49);
 			this.txtCıty.Name = "txtCıty";
 			this.txtCıty.Size = new System.Drawing.Size(171, 22);
 			this.txtCıty.TabIndex = 17;
@@ -130,7 +131,7 @@
 			// dataGridView1
 			// 
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(309, 12);
+			this.dataGridView1.Location = new System.Drawing.Point(280, 12);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
@@ -140,7 +141,7 @@
 			// btnList
 			// 
 			this.btnList.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.btnList.Location = new System.Drawing.Point(121, 290);
+			this.btnList.Location = new System.Drawing.Point(103, 290);
 			this.btnList.Name = "btnList";
 			this.btnList.Size = new System.Drawing.Size(171, 45);
 			this.btnList.TabIndex = 14;
@@ -150,7 +151,7 @@
 			// 
 			// txtId
 			// 
-			this.txtId.Location = new System.Drawing.Point(121, 12);
+			this.txtId.Location = new System.Drawing.Point(103, 12);
 			this.txtId.Name = "txtId";
 			this.txtId.Size = new System.Drawing.Size(171, 22);
 			this.txtId.TabIndex = 13;
@@ -175,7 +176,7 @@
 			// 
 			// txtPrice
 			// 
-			this.txtPrice.Location = new System.Drawing.Point(121, 170);
+			this.txtPrice.Location = new System.Drawing.Point(103, 167);
 			this.txtPrice.Name = "txtPrice";
 			this.txtPrice.Size = new System.Drawing.Size(171, 22);
 			this.txtPrice.TabIndex = 27;
@@ -191,7 +192,7 @@
 			// 
 			// txtDay
 			// 
-			this.txtDay.Location = new System.Drawing.Point(121, 209);
+			this.txtDay.Location = new System.Drawing.Point(103, 206);
 			this.txtDay.Name = "txtDay";
 			this.txtDay.Size = new System.Drawing.Size(171, 22);
 			this.txtDay.TabIndex = 29;
@@ -217,7 +218,7 @@
 			// 
 			// nudCapacity
 			// 
-			this.nudCapacity.Location = new System.Drawing.Point(121, 134);
+			this.nudCapacity.Location = new System.Drawing.Point(103, 128);
 			this.nudCapacity.Name = "nudCapacity";
 			this.nudCapacity.Size = new System.Drawing.Size(171, 22);
 			this.nudCapacity.TabIndex = 32;
@@ -225,7 +226,7 @@
 			// cmbGuide
 			// 
 			this.cmbGuide.FormattingEnabled = true;
-			this.cmbGuide.Location = new System.Drawing.Point(121, 248);
+			this.cmbGuide.Location = new System.Drawing.Point(103, 245);
 			this.cmbGuide.Name = "cmbGuide";
 			this.cmbGuide.Size = new System.Drawing.Size(171, 24);
 			this.cmbGuide.TabIndex = 33;
@@ -234,7 +235,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1461, 547);
+			this.ClientSize = new System.Drawing.Size(1429, 547);
 			this.Controls.Add(this.cmbGuide);
 			this.Controls.Add(this.nudCapacity);
 			this.Controls.Add(this.label7);
