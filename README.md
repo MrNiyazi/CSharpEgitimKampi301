@@ -14,3 +14,4 @@ Daha performanslı ve optimize sorgular yazmak için EF metotlarını efektif bi
 Veritabanı ile kod arasındaki uyumu sağlamak ve bu uyumu yönetmek,
 Karmaşık ilişkili tablolar arasında sorgular yazmak ve sonuçları işlemlerimize uygun şekilde şekillendirmek.
 
+![Ekran görüntüsü 2024-11-24 002911](https://github.com/user-attachments/assets/dc3caf71-5a1c-479d-8f19-71018445bc0b)
