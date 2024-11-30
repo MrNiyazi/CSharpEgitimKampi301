@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.DataAccesLayer.Repositories
 {
-	internal class GenericRepository
+	public class GenericRepository
 	{
 	}
 }
