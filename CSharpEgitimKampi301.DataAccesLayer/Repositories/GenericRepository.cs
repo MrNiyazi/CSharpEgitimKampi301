@@ -9,6 +9,5 @@ namespace CSharpEgitimKampi301.DataAccesLayer.Repositories
 	public class GenericRepository
 	{
 
-
 	}
 }
