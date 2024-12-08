@@ -1,4 +1,5 @@
 ﻿using CSharpEgitimKampi301.BusinesLayer.Abstract;
+using CSharpEgitimKampi301.DataAccesLayer.Abstract;
 using CSharpEgitimKampi301.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,31 +9,37 @@ using System.Threading.Tasks;
 
 namespace CSharpEgitimKampi301.BusinesLayer.Concrete
 {
+	
 	public class CategoryManager : ICategoryService
 	{
+		private readonly ICategoryDal _categoryDal;
+		public CategoryManager(ICategoryDal categoryDal)
+		{
+			_categoryDal = categoryDal;
+		}
 		public void TDelete(Category entity)
 		{
-			throw new NotImplementedException();
+			_categoryDal.Delete(entity);
 		}
 
 		public List<Category> TGetAll()
 		{
-			throw new NotImplementedException();
+			return _categoryDal.GetAll();
 		}
 
 		public Category TGetById(int id)
 		{
-			throw new NotImplementedException();
+			return _categoryDal.GetById(id);
 		}
 
 		public void TInsert(Category entity)
 		{
-			throw new NotImplementedException();
+			_categoryDal.Insert(entity);
 		}
 
 		public void TUpdate(Category entity)
 		{
-			throw new NotImplementedException();
+			_categoryDal.Update(entity);
 		}
 	}
 }
