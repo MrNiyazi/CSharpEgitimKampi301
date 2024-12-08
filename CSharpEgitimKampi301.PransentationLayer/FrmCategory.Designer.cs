@@ -68,6 +68,7 @@
 			this.btnList.TabIndex = 2;
 			this.btnList.Text = "Listele";
 			this.btnList.UseVisualStyleBackColor = true;
+			this.btnList.Click += new System.EventHandler(this.btnList_Click);
 			// 
 			// dataGridView1
 			// 
@@ -134,6 +135,7 @@
 			this.btnAdd.TabIndex = 10;
 			this.btnAdd.Text = "Ekle";
 			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
 			// btnDelete
 			// 
