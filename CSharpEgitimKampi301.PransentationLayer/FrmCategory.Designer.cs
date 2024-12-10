@@ -145,6 +145,7 @@
 			this.btnDelete.TabIndex = 11;
 			this.btnDelete.Text = "Sil";
 			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnUpdate
 			// 
@@ -154,6 +155,7 @@
 			this.btnUpdate.TabIndex = 12;
 			this.btnUpdate.Text = "Güncelle";
 			this.btnUpdate.UseVisualStyleBackColor = true;
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 			// 
 			// btnGetById
 			// 
@@ -163,6 +165,7 @@
 			this.btnGetById.TabIndex = 13;
 			this.btnGetById.Text = "ID ye Göre Getir";
 			this.btnGetById.UseVisualStyleBackColor = true;
+			this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
 			// 
 			// FrmCategory
 			// 
