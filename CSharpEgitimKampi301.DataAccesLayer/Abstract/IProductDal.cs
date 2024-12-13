@@ -9,6 +9,6 @@ namespace CSharpEgitimKampi301.DataAccesLayer.Abstract
 {
 	public interface IProductDal : IGenericDal<Product>
 	{
-		List<Product> GetProductsWithCategory();
+		List<Object> GetProductsWithCategory();
 	}
 }

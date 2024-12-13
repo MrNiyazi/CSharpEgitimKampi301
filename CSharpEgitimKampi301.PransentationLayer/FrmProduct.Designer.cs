@@ -46,6 +46,7 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.btnList2 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -75,6 +76,7 @@
 			this.btnDelete.TabIndex = 24;
 			this.btnDelete.Text = "Sil";
 			this.btnDelete.UseVisualStyleBackColor = true;
+			this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
 			// 
 			// btnAdd
 			// 
@@ -94,19 +96,20 @@
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(297, 29);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(942, 453);
+			this.dataGridView1.Size = new System.Drawing.Size(883, 453);
 			this.dataGridView1.TabIndex = 17;
 			// 
 			// btnList
 			// 
-			this.btnList.Location = new System.Drawing.Point(44, 293);
+			this.btnList.Location = new System.Drawing.Point(44, 257);
 			this.btnList.Name = "btnList";
-			this.btnList.Size = new System.Drawing.Size(233, 30);
+			this.btnList.Size = new System.Drawing.Size(108, 66);
 			this.btnList.TabIndex = 16;
 			this.btnList.Text = "Listele";
 			this.btnList.UseVisualStyleBackColor = true;
@@ -203,12 +206,23 @@
 			this.comboBox1.Size = new System.Drawing.Size(147, 24);
 			this.comboBox1.TabIndex = 35;
 			// 
+			// btnList2
+			// 
+			this.btnList2.Location = new System.Drawing.Point(158, 257);
+			this.btnList2.Name = "btnList2";
+			this.btnList2.Size = new System.Drawing.Size(121, 66);
+			this.btnList2.TabIndex = 36;
+			this.btnList2.Text = "Listele 2";
+			this.btnList2.UseVisualStyleBackColor = true;
+			this.btnList2.Click += new System.EventHandler(this.btnList2_Click);
+			// 
 			// FrmProduct
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.ClientSize = new System.Drawing.Size(1251, 494);
+			this.ClientSize = new System.Drawing.Size(1198, 494);
+			this.Controls.Add(this.btnList2);
 			this.Controls.Add(this.comboBox1);
 			this.Controls.Add(this.textBox3);
 			this.Controls.Add(this.label6);
@@ -256,5 +270,6 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.Button btnList2;
 	}
 }

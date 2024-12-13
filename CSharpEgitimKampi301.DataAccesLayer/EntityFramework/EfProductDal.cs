@@ -12,11 +12,11 @@ namespace CSharpEgitimKampi301.DataAccesLayer.EntityFramework
 {
 	public class EfProductDal : GenericRepository<Product>, IProductDal
 	{
-		public List<Product> GetProductsWithCategory()
+		public List<Object> GetProductsWithCategory()
 		{
 			var context = new CampContext();
 			var values = context.Products
-				.Select(x=> new Product
+				.Select(x=> new 
 				{
 					ProductId = x.ProductId,
 					ProductName = x.ProductName,
@@ -25,7 +25,7 @@ namespace CSharpEgitimKampi301.DataAccesLayer.EntityFramework
 					ProductDescription = x.ProductDescription,
 					CategoryName = x.Category.CategoryName,
 				}).ToList();
-			return values;
+			return values.Cast<object>().ToList();
 		}
 	}
 }
