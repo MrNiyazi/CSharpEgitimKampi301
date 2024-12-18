@@ -32,17 +32,17 @@
 			this.btnUpdate = new System.Windows.Forms.Button();
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.btnAdd = new System.Windows.Forms.Button();
-			this.txtCategoryName = new System.Windows.Forms.TextBox();
+			this.txtProductName = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.btnList = new System.Windows.Forms.Button();
-			this.txtCategoryID = new System.Windows.Forms.TextBox();
+			this.txtProductID = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.txtProductPrice = new System.Windows.Forms.TextBox();
+			this.txtProductStock = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.txtProductDescription = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label7 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -58,6 +58,7 @@
 			this.btnGetById.TabIndex = 26;
 			this.btnGetById.Text = "ID ye Göre Getir";
 			this.btnGetById.UseVisualStyleBackColor = true;
+			this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
 			// 
 			// btnUpdate
 			// 
@@ -67,6 +68,7 @@
 			this.btnUpdate.TabIndex = 25;
 			this.btnUpdate.Text = "Güncelle";
 			this.btnUpdate.UseVisualStyleBackColor = true;
+			this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
 			// 
 			// btnDelete
 			// 
@@ -86,13 +88,14 @@
 			this.btnAdd.TabIndex = 23;
 			this.btnAdd.Text = "Ekle";
 			this.btnAdd.UseVisualStyleBackColor = true;
+			this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
 			// 
-			// txtCategoryName
+			// txtProductName
 			// 
-			this.txtCategoryName.Location = new System.Drawing.Point(130, 64);
-			this.txtCategoryName.Name = "txtCategoryName";
-			this.txtCategoryName.Size = new System.Drawing.Size(147, 22);
-			this.txtCategoryName.TabIndex = 19;
+			this.txtProductName.Location = new System.Drawing.Point(130, 64);
+			this.txtProductName.Name = "txtProductName";
+			this.txtProductName.Size = new System.Drawing.Size(147, 22);
+			this.txtProductName.TabIndex = 19;
 			// 
 			// dataGridView1
 			// 
@@ -115,12 +118,12 @@
 			this.btnList.UseVisualStyleBackColor = true;
 			this.btnList.Click += new System.EventHandler(this.btnList_Click);
 			// 
-			// txtCategoryID
+			// txtProductID
 			// 
-			this.txtCategoryID.Location = new System.Drawing.Point(130, 29);
-			this.txtCategoryID.Name = "txtCategoryID";
-			this.txtCategoryID.Size = new System.Drawing.Size(147, 22);
-			this.txtCategoryID.TabIndex = 15;
+			this.txtProductID.Location = new System.Drawing.Point(130, 29);
+			this.txtProductID.Name = "txtProductID";
+			this.txtProductID.Size = new System.Drawing.Size(147, 22);
+			this.txtProductID.TabIndex = 15;
 			// 
 			// label2
 			// 
@@ -140,20 +143,20 @@
 			this.label1.TabIndex = 14;
 			this.label1.Text = "Ürün ID:";
 			// 
-			// textBox1
+			// txtProductPrice
 			// 
-			this.textBox1.Location = new System.Drawing.Point(130, 133);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(147, 22);
-			this.textBox1.TabIndex = 30;
-			this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+			this.txtProductPrice.Location = new System.Drawing.Point(130, 133);
+			this.txtProductPrice.Name = "txtProductPrice";
+			this.txtProductPrice.Size = new System.Drawing.Size(147, 22);
+			this.txtProductPrice.TabIndex = 30;
+			this.txtProductPrice.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
-			// textBox2
+			// txtProductStock
 			// 
-			this.textBox2.Location = new System.Drawing.Point(130, 95);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(147, 22);
-			this.textBox2.TabIndex = 28;
+			this.txtProductStock.Location = new System.Drawing.Point(130, 95);
+			this.txtProductStock.Name = "txtProductStock";
+			this.txtProductStock.Size = new System.Drawing.Size(147, 22);
+			this.txtProductStock.TabIndex = 28;
 			// 
 			// label4
 			// 
@@ -173,12 +176,12 @@
 			this.label5.TabIndex = 27;
 			this.label5.Text = "Ürün Stok:";
 			// 
-			// textBox3
+			// txtProductDescription
 			// 
-			this.textBox3.Location = new System.Drawing.Point(130, 199);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(147, 22);
-			this.textBox3.TabIndex = 34;
+			this.txtProductDescription.Location = new System.Drawing.Point(130, 199);
+			this.txtProductDescription.Name = "txtProductDescription";
+			this.txtProductDescription.Size = new System.Drawing.Size(147, 22);
+			this.txtProductDescription.TabIndex = 34;
 			// 
 			// label6
 			// 
@@ -224,21 +227,21 @@
 			this.ClientSize = new System.Drawing.Size(1198, 494);
 			this.Controls.Add(this.btnList2);
 			this.Controls.Add(this.comboBox1);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.txtProductDescription);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label7);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.txtProductPrice);
+			this.Controls.Add(this.txtProductStock);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.btnGetById);
 			this.Controls.Add(this.btnUpdate);
 			this.Controls.Add(this.btnDelete);
 			this.Controls.Add(this.btnAdd);
-			this.Controls.Add(this.txtCategoryName);
+			this.Controls.Add(this.txtProductName);
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.btnList);
-			this.Controls.Add(this.txtCategoryID);
+			this.Controls.Add(this.txtProductID);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.Name = "FrmProduct";
@@ -256,17 +259,17 @@
 		private System.Windows.Forms.Button btnUpdate;
 		private System.Windows.Forms.Button btnDelete;
 		private System.Windows.Forms.Button btnAdd;
-		private System.Windows.Forms.TextBox txtCategoryName;
+		private System.Windows.Forms.TextBox txtProductName;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button btnList;
-		private System.Windows.Forms.TextBox txtCategoryID;
+		private System.Windows.Forms.TextBox txtProductID;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox txtProductPrice;
+		private System.Windows.Forms.TextBox txtProductStock;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox txtProductDescription;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.ComboBox comboBox1;
